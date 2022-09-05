@@ -8,7 +8,7 @@ import (
 	"gorm.io/gorm/logger"
 )
 
-const DSN string = "demo:demo@tcp(123.56.17.118:3306)/gorm?charset=utf8mb4&parseTime=True&loc=Local"
+const DSN string = "demo:demo@tcp(192.168.1.102:3306)/gorm?charset=utf8mb4&parseTime=True&loc=Local"
 
 var db *gorm.DB
 
