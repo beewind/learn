@@ -9,7 +9,3 @@ type Interface interface {
 	Pop() any   // remove and return element Len() - 1.
 }
 ```
-## 方法
-
-
-

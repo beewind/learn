@@ -4,7 +4,7 @@
 
 list是一个双向链表
 
-![image-20221026100818225](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20221026100818225.png)
+![](/home/zhuyao/workspace/golang/src/github.com/eugene/learn/container/doc/list.assets/image-20221026100818225.png)
 
 ### Element
 
@@ -65,7 +65,7 @@ func (l *List) Init() *List {
 
 ##### 常用函数
 
-```
+```go
 // 分配内存,初始化List
 func New() *List { return new(List).Init() }
 
@@ -93,7 +93,7 @@ func (l *List) Back() *Element {
 
 其他PushXxx,InserXxx基于insert变形
 
-```
+```go
 //在at后插入e
 func (l *List) insert(e, at *Element) *Element {
 	e.prev = at
@@ -110,7 +110,7 @@ func (l *List) insert(e, at *Element) *Element {
 
 ##### func (l *List) remove(e *Element) 
 
-```
+```go
 //移除e
 func (l *List) remove(e *Element) {
 	e.prev.next = e.next
@@ -126,7 +126,7 @@ func (l *List) remove(e *Element) {
 
 其他MoveXxx基于此变形
 
-```
+```go
 //把e move到at.next
 func (l *List) move(e, at *Element) {
 	if e == at {
@@ -141,6 +141,4 @@ func (l *List) move(e, at *Element) {
 	e.next.prev = e
 }
 ```
-
-## demo
 
